@@ -1,0 +1,102 @@
+.flow {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  .inner {
+  }
+  .flow-cont {
+    margin-top: 50px;
+    .contract {
+      margin-left: 15px;
+      @include overTab {
+        margin-left: 30px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: bold;
+        background: rgba(0, 0, 0, 0)
+          linear-gradient(transparent 60%, #cce5ff 0%) repeat scroll 0 0;
+        width: 100px;
+      }
+    }
+    .flow-list {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 30px;
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      @include overTab {
+        margin: 0px 50px;
+        padding-top: 30px;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+      }
+
+      .flow-item {
+        .vector-size {
+          font-size: 1em;
+          @include overTab {
+            font-size: 3em;
+          }
+        }
+        .contract-set {
+          @include overTab {
+            margin-top: 50px;
+          }
+
+          .flow-icon {
+            color: #f7c04a;
+            @include overTab {
+              color: white;
+            }
+
+            .icon-size {
+              font-size: 2.5em;
+              @include overTab {
+                font-size: 5em;
+              }
+            }
+          }
+          .flow-desc {
+            padding-top: 10px;
+            h3 {
+              color: #f7c04a;
+              font-weight: bold;
+              font-size: 10px;
+              @include overTab {
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+      .circle-size {
+        @include overTab {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          background-color: #f7c04a;
+        }
+      }
+      .vector {
+        color: #f7c04a;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 0px 20px;
+        @include overTab {
+          color: #f7c04a;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+      }
+    }
+  }
+  .up {
+  }
+  .down {
+  }
+}

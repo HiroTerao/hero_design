@@ -1,0 +1,86 @@
+.service {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  .inner {
+  }
+  .service-cont {
+    margin-top: 50px;
+  }
+  .service-list {
+    display: block;
+    @include overTab {
+      display: flex;
+      justify-content: center;
+    }
+    .service-item {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      @include overTab {
+        width: 50%;
+        padding: 0 20px;
+      }
+
+      .image {
+        img {
+          border-radius: 80px;
+          box-shadow: 14px 14px 0px 0px #ffdb00;
+          @include overTab {
+            height: 300px;
+            border-radius: 80px;
+            box-shadow: 14px 14px 0px 0px #ffdb00;
+          }
+        }
+      }
+      + .service-item {
+        margin-top: 50px;
+        @include overTab {
+          margin-top: 0;
+          padding-right: 80px;
+        }
+      }
+      .service-desc {
+        display: flex;
+        justify-content: space-between;
+        line-height: 2.5;
+        h3 {
+          font-size: 15px;
+          font-weight: bold;
+          @include overTab {
+            font-size: 20px;
+            font-weight: bold;
+          }
+        }
+        p {
+          font-size: 15px;
+          @include overTab {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .service-btn {
+      margin-top: 50px;
+      text-align: center;
+    }
+    .contact-btn {
+      color: black;
+      background-color: #ffdb00;
+      border-radius: 80px;
+      font-size: 14px;
+      padding: 25px 20px;
+      @include overTab {
+        color: black;
+        background-color: #ffdb00;
+        border-radius: 80px;
+        font-size: 20px;
+        padding: 25px 20px;
+      }
+    }
+    .contact-btn:hover {
+      color: cl(white);
+      background-color: cl(black);
+    }
+  }
+}

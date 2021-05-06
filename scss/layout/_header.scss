@@ -1,0 +1,166 @@
+.header {
+  .header-fixed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #d8d8d8;
+    background-color: cl(white);
+    z-index: 2;
+  }
+  .header-logo {
+    width: 120px;
+    @include overTab {
+      width: 137px;
+    }
+  }
+  .nav-btn {
+    width: 52px;
+    height: 30px;
+    appearance: none;
+    background: transparent;
+    border: none;
+    font: inherit;
+    outline: none;
+    position: relative;
+    right: 30px;
+    @include overTab {
+      display: none;
+    }
+    &.-active {
+      span {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transition: transform 0.3s ease;
+        &:first-child {
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          transform: rotate(45deg);
+        }
+        &:last-child {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    span {
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: cl(black);
+      display: block;
+      transition: transform 0.3s ease;
+      &:first-child {
+        top: 0;
+      }
+      &:nth-child(2) {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      &:last-child {
+        bottom: 0;
+      }
+    }
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding-top: 144px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    @include overTab {
+      width: initial;
+      background-color: transparent;
+      padding-top: 0;
+      z-index: 3;
+      left: inherit;
+      right: 0;
+      top: 40px;
+      opacity: 1;
+      visibility: visible;
+    }
+    &.-active {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.3s ease;
+    }
+  }
+  .nav-wrap {
+  }
+  .nav-list {
+    text-align: center;
+    color: cl(white);
+    padding-top: 30px;
+    padding-bottom: 45px;
+    @include overTab {
+      display: flex;
+      margin-right: 20px;
+      text-align: center;
+      height: 60px;
+      line-height: 60px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    > .contact-btn {
+      margin-left: auto;
+      margin-right: auto;
+      color: black;
+      background-color: #ffdb00;
+      border-radius: 80px;
+      font-weight: 550;
+      width: 60%;
+      padding: 12px 24px 12px;
+      @include overTab {
+        color: black;
+        background-color: #ffdb00;
+        border-radius: 80px;
+        font-weight: 550;
+        padding: 0 20px;
+        width: inherit;
+      }
+    }
+    .contact-btn:hover {
+      background-color: cl(white);
+      a {
+        color: cl(black);
+      }
+      @include overTab {
+        color: cl(white);
+        background-color: cl(black);
+        a {
+          color: cl(white);
+        }
+      }
+    }
+    .nav-item {
+      + .nav-item {
+        margin-top: 20px;
+        @include overTab {
+          margin-top: 0;
+          margin-left: 15px;
+        }
+      }
+      > a {
+        color: cl(white);
+        font-size: 20px;
+        @include overTab {
+          font-size: 15px;
+          color: cl(black);
+        }
+      }
+    }
+    .sp-btn a {
+      color: black;
+    }
+  }
+}

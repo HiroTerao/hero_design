@@ -1,0 +1,35 @@
+.footer {
+  border-top: 1px solid #d8d8d8;
+  padding-bottom: 30px;
+  .inner {
+    .nav-wrap {
+      .nav-list {
+        text-align: center;
+        padding-top: 30px;
+        line-height: 2.5;
+        @include overTab {
+          display: flex;
+          justify-content: center;
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+
+        .nav-item {
+          margin: 0 20px;
+          a {
+          }
+        }
+      }
+    }
+    .footer-logo {
+      width: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      img {
+      }
+    }
+    .copyright {
+      text-align: center;
+    }
+  }
+}

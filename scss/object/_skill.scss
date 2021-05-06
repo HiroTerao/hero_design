@@ -1,0 +1,73 @@
+.skill {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fafafa;
+  .inner {
+  }
+  .skill-cont {
+    margin-top: 50px;
+  }
+  .skill-list {
+    display: block;
+    @include overTab {
+      display: flex;
+      justify-content: center;
+    }
+    .skill-item {
+      margin: 20px 30px;
+      border: solid 1px #d8d8d8;
+      padding-bottom: 20px;
+      + .profile-item {
+        margin-top: 30px;
+        @include overTab {
+          margin-top: 0;
+        }
+      }
+      @include overTab {
+        margin: 0px 30px;
+        width: 33%;
+        border: solid 1px #d8d8d8;
+        padding-bottom: 20px;
+      }
+      .skill-icon {
+        text-align: center;
+        margin-top: 20px;
+        .my-html {
+          color: #e44d26;
+        }
+        .my-css {
+          color: #156eb0;
+        }
+        .my-js {
+          color: #efd819;
+        }
+        .my-wordpress {
+          color: #21759b;
+        }
+        .my-writing {
+          color: #3ec8b2;
+        }
+      }
+      .skill-desc {
+        h3 {
+          text-align: center;
+          margin-top: 10px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+        p {
+          margin-top: 20px;
+          line-height: 2;
+          padding: 0px 35px;
+          @include overTab {
+            margin-top: 20px;
+            margin-left: 20px;
+            padding-left: 0;
+            line-height: 2;
+          }
+        }
+      }
+    }
+  }
+}

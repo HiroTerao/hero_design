@@ -1,0 +1,44 @@
+.contact {
+  padding-top: 30px;
+  background-color: #6f99ff;
+  color: white;
+  .inner {
+  }
+  .contact-message {
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    @include overTab {
+      padding-top: 80px;
+      text-align: center;
+      font-size: 50px;
+      font-weight: bold;
+    }
+  }
+  .contact-desc {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .inform-btn {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    .contact-btn {
+      color: black;
+      background-color: #ffdb00;
+      border-radius: 80px;
+      font-size: 20px;
+      padding: 25px 20px;
+    }
+    .contact-btn:hover {
+      color: cl(white);
+      background-color: cl(black);
+    }
+  }
+}

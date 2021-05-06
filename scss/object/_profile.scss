@@ -1,0 +1,88 @@
+.profile {
+  padding-top: 30px;
+  .inner {
+  }
+  .face-icon {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .sns-icon {
+    margin-top: 20px;
+  }
+  .sns-list {
+    display: flex;
+    justify-content: center;
+    .sns-item {
+      margin: 0px 30px;
+      .my-twitter {
+        color: #00aced;
+      }
+      .my-instagram {
+        color: #d93177;
+      }
+      .my-wordpress {
+        color: #21759b;
+      }
+    }
+  }
+  .profile-cont {
+    margin-top: 50px;
+  }
+  .profile-list {
+    display: block;
+    @include overTab {
+      display: flex;
+      justify-content: center;
+    }
+    .profile-item {
+      margin: 0px 30px;
+      border: solid 1px #d8d8d8;
+      padding-bottom: 20px;
+      + .profile-item {
+        margin-top: 30px;
+        @include overTab {
+          margin-top: 0;
+        }
+      }
+      @include overTab {
+        margin: 0px 30px;
+        width: 33%;
+        border: solid 1px #d8d8d8;
+        padding-bottom: 20px;
+      }
+      .profile-icon {
+        text-align: center;
+        margin-top: 20px;
+        .my-blue {
+          color: #5882fa;
+        }
+      }
+      .profile-desc {
+        h3 {
+          text-align: center;
+          margin-top: 10px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+        p {
+          margin-top: 20px;
+          padding-left: 10px;
+          padding-right: 10px;
+          line-height: 2;
+          @include overTab {
+            margin-top: 20px;
+            margin-left: 20px;
+            padding-left: 0;
+            line-height: 2;
+          }
+        }
+      }
+    }
+  }
+}
